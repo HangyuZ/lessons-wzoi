@@ -17,7 +17,7 @@ int main(){
         }
         else if(k==2){
             cin>>x;
-            n--;
+            --n;
             for(int k=x;k<=n;k++) a[k]=a[k+1];
             for(int k=1;k<=n;k++) cout<<a[k]<<' ';
             cout<<endl;
