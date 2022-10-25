@@ -2,7 +2,7 @@
 using namespace std;
 int a[100001],x,n;
 int main(){
-    cin>>int n,m,k;
+    cin>>n;
     while(n--){
         scanf("%d",&x);
         if(a[x]==0) printf("%d ",x);
