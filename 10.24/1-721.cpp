@@ -26,7 +26,5 @@ int main(){
     return 0;
 }
 void jiaohuan(int x,int y,int z){
-    for(int i=x;i<=y;i++) b[i]=a[i];
-    for(int i=(x+z);i<=(y+z);i++) a[i-z]=a[i];
-    for(int i=(x+z);i<=(y+z);i++) a[i]=b[i-z];
+    for(int i=x;i<=y;i++) swap(a[i],a[i+z]);
 }
