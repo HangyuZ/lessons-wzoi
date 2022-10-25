@@ -1,9 +1,8 @@
 #include<bits/stdc++.h>
 using namespace std;
-int a[10005],b[10005];
+int a[10005],b[10005];int n,m,k;int x,y,z;
 void jiaohuan(int x,int y,int z);
 int main(){
-    int n,m,k;int x,y,z;
     cin>>n>>m;
     for(int i=1;i<=n;i++) cin>>a[i];
     for(int i=1;i<=m;i++){

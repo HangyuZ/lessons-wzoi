@@ -1,8 +1,8 @@
 #include<bits/stdc++.h>
 using namespace std;
+int n,m,k;int x,y;
 int main(){
     int a[10005];
-    int n,m,k;int x,y;
     cin>>n>>m;
     for(int i=1;i<=n;i++) a[i]=i;
     for(int i=1;i<=n;i++) cout<<a[i]<<' ';
