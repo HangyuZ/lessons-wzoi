@@ -1,15 +1,12 @@
 #include<bits/stdc++.h>
 using namespace std;
-int a[200005];bool p[200005]={false};
+int a[100001],x,n;
 int main(){
-    int n;int x;
-    scanf("%d",&n);
-    for(int i=1;i<=n;i++){
+    cin>>int n,m,k;
+    while(n--){
         scanf("%d",&x);
-        if(!p[x]) {a[i]=x;p[x]=true;}
-    }
-    for(int i=1;i<=n;i++){
-        if(a[i]!=0) printf("%d ",a[i]);
+        if(a[x]==0) printf("%d ",x);
+        a[x]=1;
     }
     return 0;
 }
