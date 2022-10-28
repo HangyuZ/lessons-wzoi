@@ -9,4 +9,5 @@ int main(){
         a[x]=1;
     }
     return 0;
+    
 }
