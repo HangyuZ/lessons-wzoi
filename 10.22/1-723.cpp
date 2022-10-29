@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-int n,m,k;int x,y;
+int n,m,k,x,y;
 int main(){
     int a[10005];
     cin>>n>>m;

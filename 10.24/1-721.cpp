@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-int a[10005],b[10005];int n,m,k;int x,y,z;
+int a[10005],b[10005];int n,m,k,x,y,z;
 void jiaohuan(int x,int y,int z);
 int main(){
     cin>>n>>m;
