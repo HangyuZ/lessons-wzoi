@@ -1,11 +1,8 @@
 # lessons-wzoi
 ohhhh github,**save my data,dave my life!!!**
-this is the files from wzoi's lessons,however,because the author is weeeeeeak(who never got AP),
+this is the files from wzoi's lessons,because the author is weeeeeeak(who never got AP),
 so...  don't be mad if you see WA(QAQ) 
 debuging and complie granteed. 
 HangyuZ,from wzhs,October 22.
 
-
-October 25th *12.79*
-October 30th *12.81*
-November 14th *12.91*
+*不要为你菜而难过，而为你不够努力而难过--tutou*
