@@ -15,10 +15,14 @@ int main(){
     m*=1.5;
     sort(p+1,p+1+n,paixu);
     int i=0;
-    while(i<=m-1){
+    while(i<=m-1||p[i].score==p[i+1].score){
+        i++;
+    }
+    cout<<p[i].score<<' '<<i<<endl;
+    i=0;
+	while(i<=m-1||p[i].score==p[i+1].score){
         i++;
         cout<<p[i].no<<' '<<p[i].score<<endl;
     }
-    while
     return 0;
-}//||p[i].score==p[i+1].score
+}
