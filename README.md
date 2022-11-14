@@ -8,3 +8,4 @@ HangyuZ,from wzhs,October 22.
 
 October 25th *12.79*
 October 30th *12.81*
+November 14th *12.91*
