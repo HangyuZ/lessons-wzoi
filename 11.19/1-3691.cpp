@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std;
-#define LL long long
 int n,c[6][6],x,y;
 int main() {
 	cin>>n;
