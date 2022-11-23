@@ -14,7 +14,7 @@ int main(){
     for(int i=1;i<=n;i++)
         for(int j=1;j<=k;j++)
              for(int p=1;p<=m;p++)
-            c[i][j]+=a[i][p]+b[i][p];
+            c[i][j]+=a[i][p]*b[p][j];
     for(int i=1;i<=n;i++){
         for(int j=1;j<=k;j++)
             printf("%d ",c[i][j]);
