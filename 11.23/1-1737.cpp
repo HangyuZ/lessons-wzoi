@@ -5,7 +5,6 @@ void p(int a,int x){
         for(int i=1;i<=a/2;i++) cout<<' ';
         cout<<'X';
     }
-    else for(int i=1;i<=)
 }
 int main(){
 
