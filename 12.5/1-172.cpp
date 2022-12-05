@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include <iostream>
+#include<bits/stdc++.h>
 using namespace std;
 int main() {
 	int n, i, j, k, t = 0, e = 0, r, w = 0, z = 0;
@@ -11,6 +10,7 @@ int main() {
 	for (i = 1; i <= n; i++)
 		for (j = 1; j <= n; j++)
 			cin >> b[i][j];
+    //input
 	for (i = 1; i <= n; i++) {
 		for (k = 1, j = n; j >= 1; j--, k <= n) {
 			if (a[j][i] == b[i][k++])
