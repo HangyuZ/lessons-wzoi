@@ -3,8 +3,7 @@ using namespace std;
 int main(){
     string s,s2="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
     getline(cin,s);
-    int i;
-    for(i=0;i<s.length();i+=3){
+    for(int i=0;i<s.length();i+=3){
         int x=s[i],y=s[i+1],z=s[i+2];
         int a=x/4;
         int b=x%4*16+y/16;
