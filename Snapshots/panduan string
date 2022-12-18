@@ -1,0 +1,7 @@
+判断某个字符是什么类型的，可以用以下这些C++函数。
+
+isalpha 字母（包括大写、小写），islower（小写字母），isupper（大写字母），isalnum（字母大写小写+数字）, isdigit 数字
+
+isblank（space和\t）、isspace（space、\t、\r、\n）
+
+时间限制: 1000ms
