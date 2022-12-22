@@ -1,27 +1,33 @@
 #include<bits/stdc++.h>
 using namespace std;
-int main(){
-    string a,s[10005];
-    cin>>a;
-    int m=1;
-    string c;
-    getline(cin,c);
-    for(int i=0;i<=c.length();i++){
-        if(c[i]!=' ') s[m]+=c[i];
-        else m++;
+int look(string s,string a){
+    for(int i=0;i<=s.length()-a.length()-1;i++){
+        for(int j=1;j<=a.length();j++){
+            if(s[i+j]!=a[j] and s[i+j]-32!=a[j] and s[i+j]!=a[j]-32) break;
+            if(j==a.length()) return i;
+        }
+        if(i==s.length()-a.length()-1) return -1;
     }
-    int sum=0;int p=0;int first=0;
-    for(int i=1;i<=m;i++){
-        if(s[i].length()==a.length()){
-            for(int j=0;i<=a.length()-1;j++){
-                if(s[i][j]==a[j] or s[i][j]==a[j]+32 or s[i][j]==a[j]-32) ;
-                else break;
-                if(j==a.length()-1) {sum++;if(!first) {first=i;}}
-            }
+    return -1;
+}
+int main(){
+    int flag=0;
+    freopen("test.in","r",stdin);
+    string s;
+    string a;
+    getline(cin,a);
+    getline(cin,s);
+    string p=s;int sum=1;
+    int k=look(s,a);
+    if(k==-1) {cout<<k;return 0;}
+    else {
+        s.erase(k,a.length());
+        while(int(look(s,a))!=-1){
+            sum++;
+            s.erase(look(s,a),a.length());
         }
     }
-    for(int i=1;i<=first-1;i++) p+=(s[i].length()+1);
-    p--;
-    cout<<sum<<endl<<p;
+    cout<<sum<<endl<<k;
+    fclose(stdin);
     return 0;
 }
